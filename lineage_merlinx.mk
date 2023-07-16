@@ -26,6 +26,10 @@ HAVOC_BUILD_TYPE := Unofficial
 HAVOC_MAINTAINER := mitsuaa
 HAVOC_GROUP_URL := https://t.me/mitsuaa
 
+# Build Variant
+WITHGAPPS := true
+TARGETGAPPS_ARCH := arm64
+
 # Pixel customization
 TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
 TARGET_INCLUDE_STOCK_ARCORE ?= true
