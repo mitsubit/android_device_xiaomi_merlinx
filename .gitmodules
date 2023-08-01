@@ -1,0 +1,3 @@
+[submodule "GCamPrebuilt"]
+	path = GCamPrebuilt
+	url = https://github.com/mitsubit/android_packages_apps_GCamPrebuilt
