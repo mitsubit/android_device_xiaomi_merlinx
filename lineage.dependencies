@@ -1,6 +1,38 @@
 [
+	{
+		"repository": "mitsubit/proprietary_vendor_xiaomi_mt6768-common",
+		"target_path": "vendor/xiaomi/mt6768-common",
+		"branch": "lineage-20",
+		"remote": "github"
+	},
+	{
+		"repository": "mitsubit/device_xiaomi_mt6768-common",
+		"target_path": "device/xiaomi/mt6768-common",
+		"branch": "thirteen",
+		"remote": "github"
+	},
+	{
+		"repository": "mitsubit/kernel_xiaomi_mt6768",
+		"target_path": "kernel/xiaomi/mt6768",
+		"branch": "lineage-20",
+		"remote": "github"
+	},
+	{
+		"repository": "LineageOS/android_hardware_mediatek",
+		"target_path": "hardware/mediatek",
+		"branch": "lineage-20",
+		"remote": "github"
+	},
+	{
+		"repository": "LineageOS/android_device_mediatek_sepolicy_vndr",
+		"target_path": "device/mediatek/sepolicy_vndr",
+		"branch": "lineage-20",
+		"remote": "github"
+	},		
   {
-    "repository": "android_device_xiaomi_mt6768-common",
-    "target_path": "device/xiaomi/mt6768-common"
+    "target_path": "prebuilts/clang/host/linux-x86/clang",
+    "branch": "main",
+    "remote": "git://git.code.sf.net/p/gengkapak/clang-gengkapak"
   }
+
 ]
