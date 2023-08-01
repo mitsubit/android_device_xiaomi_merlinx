@@ -14,11 +14,47 @@ $(call inherit-product, device/xiaomi/merlinx/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# SOC
+PROCESSOR_MODEL := mt6768
+
+# AlphaDroid Build Type & Maintainer stuff.
+ALPHA_MAINTAINER := mitsu00
+ALPHA_BUILD_TYPE := UNOFFICIAL
+
+# Gapps Build Details.
+WITH_GAPPS := 2
+TARGET_GAPPS_ARCH := arm64
+
+# Debugging Flags
+TARGET_INCLUDE_MATLOG := false
+TARGET_DEFAULT_ADB_ENABLED := false
+
+# Another stuff
+TARGET_HAS_UDFPS := false
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_APERTURE_CAMERA := false
+TARGET_DISABLE_EPPE := true
+
+# Pixel customization
+TARGET_USE_PIXEL_FRAMEWORK := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
+TARGET_INCLUDE_STOCK_ARCORE ?= true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
 PRODUCT_NAME := lineage_merlinx
 PRODUCT_DEVICE := merlinx
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 9
+TARGET_VENDOR := Xiaomi
+BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -26,3 +62,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="merlin-user 11 RP1A.200720.011 V12.5.4.0.RJOMIXM release-keys"
 
 BUILD_FINGERPRINT := Redmi/merlin/merlin:11/RP1A.200720.011/V12.5.4.0.RJOMIXM:user/release-keys
+
+PRODUCT_PACKAGES += \
+    GCamPrebuilt
