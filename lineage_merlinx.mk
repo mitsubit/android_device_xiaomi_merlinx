@@ -14,7 +14,27 @@ $(call inherit-product, device/xiaomi/merlinx/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Device config
+TARGET_HAS_UDFPS := false
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# GAPPS config
 WITH_GAPPS := 0
+
+# Use Google Telephony pack (Dialer, Contacts, Messaging) on GAPPS builds
+# Default = true
+TARGET_USE_GOOGLE_TELEPHONY := false
+
+# Debugging
+# Default = false
+TARGET_INCLUDE_MATLOG := false
+TARGET_DEFAULT_ADB_ENABLED := true
+
+# Maintainer
+ALPHA_BUILD_TYPE := UNOFFICIAL
+ALPHA_MAINTAINER := neko
 
 PRODUCT_NAME := lineage_merlinx
 PRODUCT_DEVICE := merlinx
