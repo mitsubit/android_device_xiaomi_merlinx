@@ -14,6 +14,8 @@ $(call inherit-product, device/xiaomi/merlinx/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+WITH_GAPPS := 0
+
 PRODUCT_NAME := lineage_merlinx
 PRODUCT_DEVICE := merlinx
 PRODUCT_MANUFACTURER := Xiaomi
