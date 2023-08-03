@@ -15,6 +15,9 @@ $(call inherit-product, device/xiaomi/merlinx/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device config
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_DISABLE_EPPE := true
+TARGET_USES_AOSP_RECOVERY := false
 TARGET_HAS_UDFPS := false
 TARGET_ENABLE_BLUR := true
 TARGET_EXCLUDES_AUDIOFX := true
